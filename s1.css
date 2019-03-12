@@ -1,6 +1,6 @@
 .header{
 padding:2px;
-background:red;
+background:white;
 margin :0;
 text-align:center;
 display: block;
@@ -8,14 +8,15 @@ display: block;
 .p1
 {
 text-align:justify; 
-padding-right:15px;
+padding-right:10px;
+padding-left:10px;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 5px;
   overflow: hidden;
-  background-color: blue;
+  background-color: pink;
 }
 
 li {
@@ -40,7 +41,7 @@ li a:hover:not(.active) {
 .content{
 width:70%;
 padding:3px;
-background:yellow;
+background:Tomato;
 margin :0;
 text-align:center;
 display: block;
@@ -67,17 +68,15 @@ display: block;
 #sidebar {
   height:90%;
   width:29%;
-  background:pink;
-  position: relative;
+  background:white;
+  position:relatvie;
   float:right;
-  bottom:400px;
-  margin:30 0 30px;
-  overflow:none;
+  margin-top:-360px;
 }
 .footer{
-padding:1px;
+padding:2px;
 background:red;
-margin :0;
+margin-bottom :-300px;
 position: relative;
 text-align:center;
 display: block;

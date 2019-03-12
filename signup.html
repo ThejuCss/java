@@ -1,8 +1,12 @@
 <html>
 <head>
 <title>webpage</title>
-<link rel="stylesheet" type="text/css" href="Style1.css">
+<link rel="stylesheet" type="text/css" href="s1.css">
 <link rel="stylesheet" type="text/css" href="styleside1.css">
+<script src="select.js">
+</script>
+<script src="validate.js">
+</script>
 </head>
 <body>
 <div class="header">
@@ -23,6 +27,7 @@
     <div class="slide slide-3"></div>
 </div>
 </div>
+<div class="containner">
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
@@ -30,37 +35,61 @@
   <li><a href="#about">About</a></li>
   <li style="float:right"><a class="active" href="#navbar">navbar</a></li>
 </ul>
+</div>
 <section class="content">
+<div class="body-wrapper">
 <div calss="containner">
-<h2>Travels</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<form name="myForm"  align ="center" onsubmit = "return validate()">
+<div>
+<h1>sign up form</h1>
+<lable for="firstname">firstname</label>
+<input type="text" id="firstname" name="firstname" placeholder="firstname" >
+<lable for="lastname">lastname</label>
+<input type="text" id="lastname="lastname" placeholder="lastname" ><br>
+<lable for="username">username</label><br>
+<input type="text" id="username" name="username" placeholder="username" ><br>
+<lable for="password">password</label><br>
+<input type="password" id="password" name="password" placeholder="password" ><br>
+<lable for="email">email</label><br>
+<input type="email" id="email" name="email" placeholder="email" ><br>
+<lable for="address">address</label><br>
+<input type="textarea" id="address" name="address" placeholder="address"></textarea><br>
+Select Country: <select name="state" id="countySel" size="1">
+        <option value="india" selected="selected">india</option>
+		<option value="united states" >unitedstates</option>
+		<option value="unitedkingdom">unitedkingdom</option>
+    </select>
+    <br>
+    <br>
+    Select State: <select name="country" id="stateSel" size="1">
+        <option value="karnataka" selected="selected">karnataka</option>
+		<option value="chicago" selected="selected">chicago</option>
+		<option value="london" selected="selected">london</option>
+		</select>
+    <br>
+    <br>
+    Select city: <select name="state" id="city" size="1">
+        <option value="nellore" selected="selected">nellore</option>
+		<option value="us city" selected="selected">uscity</option>
+		<option value="uk city" selected="selected">ukcity</option>
+    </select><br>
+	
+    pincode:<input type="text" value="number">
+	DOB: <input type="date" name="bday">
+    <input type="submit">
+<input type="submit" value="send" name="submit" onclick="myfunction()"><a href="login.html">create</a>
+<script>
+function myfunction(){
+alert("signup successfull");
+}
+</script>
+</div>
+</form>
+
 </div>
 </section>
-<div class="body-wrapper">
+<div class="containner">
 <div class="row">
-<div class="column">
-<h2 class="heading1">Home</h2>
-<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-<div class="column">
-<h2 class="heading2">News</h2>
-<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-</div>
-<div class="row">
-<div class="column">
-<h2 class="heading3">About</h2>
-<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-<div class="column">
-<h2 class="heading4">Help</h2>
-<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
 <aside id="sidebar">
         <section class="image">
 	<div style="display:block;">
@@ -78,7 +107,8 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, wh
         </section>
  </aside>
 </div>
-<div class="footer">
+</div>
+<div class="footer" style="margin-top:80px;" >
 <h1>Thank u vist agian</h1>
 </div>
 </div>
