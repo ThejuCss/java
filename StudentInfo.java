@@ -1,68 +1,68 @@
 import java.util.*;
-class student{
-        string name,addr;
+class Student{
+        String name,address;
         int age;
         
-        student()
+        Student()
         {
             name="unknown";
-            addr="-";
+            address="-";
             age=0;
         }
-        void setinfo(string n, int ag)
+        void setinfo(String name, int age)
         {
-            name = n;
-            age = ag;
+            name = name;
+            age = age;
         }
-        void setinfo(string n, string a, int ag)
+        void setinfo(String name, String address, int age)
         {
-            name = n;
-            addr = a;
-            age = ag;
+            name = name;
+            address = address;
+            age = age;
         }
        
         void getinfo()
         {
             System.out.println(name);
             System.out.println(age);
-            System.out.println(addr);
+            System.out.println(address);
         }
 }
 class StudentInfo{
-public static void main(String args[])
+public static void main(String args[])throws Exception
 {
-    Student[] x = new Student[10];
-    string name,addr;
+    Student s[] = new Student[10];
+    String name,addr;
     int i,age;
     
-    for(i=0;i<x;i++)
+    for(i=0;i<s;i++)
     { 
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter name");
-        String name=sc.next();
+        name=sc.next();
         System.out.println( "Enter age");
-        int age=sc.nextInt();
+        age=sc.nextInt();
         s[i].setinfo(name, age);
     }
     
-    for(i=0;i<x;i++)
+    for(i=0;i<s;i++)
     {
         s[i].getinfo();
     }
     
-    for(i=0;i<x;i++)
+    for(i=0;i<s;i++)
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter name");
-        String name=sc.next();
+        name=sc.next();
         System.out.println( "Enter age");
-        int age=sc.nextInt();
+        age=sc.nextInt();
         System.out.println("Enter address");
         String address=sc.next();
-        s[i].setinfo(name,addr,age);
+        s[i].setinfo(name,address,age);
     }
     
-    for(i=0;i<x;i++)
+    for(i=0;i<s;i++)
     {
         s[i].getinfo();
     }
