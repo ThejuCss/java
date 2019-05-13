@@ -1,34 +1,22 @@
-import java.util.*;
-abstract class Bank{
-static double si,ci;
-void simpleInterest(double p,double r,double t){
-si=(p*r*t)/100;
-System.out.println("simple interest"+si);
+abstract class Bank {
+abstract void simpleInterest(double p,double r,double t) ;
+abstract void compoundInterest(double p,double r,double t,double n) ;
 }
-void compoundInterest(double p,double r,double t){
-ci=p* Math.pow((1 + r/100),t);
-System.out.print("compound interest" +ci);
-}
-}
+
 class Interest extends Bank{
-public static void main(String args[]){
- Interest i=new Interest();
-Scanner sc=new Scanner(System.in);
-System.out.println("enter principal amount");
-double p=sc.nextDouble();
-System.out.println("enter rate of interest");
-double r=sc.nextDouble();
-System.out.println("enter time");
-double t=sc.nextDouble();
-System.out.println("choose ur plan");
-String c=sc.next();
-if(c.equals("simpleinterest"))
-{
- System.out.println("Simple Interest" +si);
+
+void simpleInterest(double p,double r,double t) {
+    double si=(p*t*r)/100;
+    System.out.println("simple Interest is "+ si);
 }
-if(c.equals("compoundinterest"))
-{
-System.out.println("compoundInterest"+ci);
+void compoundInterest(double p,double t,double r,double n) {
+    double amount = p * Math.pow(1 + (r / n), n * t);
+    double interest = amount - p;
+    System.out.println("Compound Interest is "+interest);
 }
+public static void main(String args[]) {
+   Interest b=new Interest();
+	b.simpleInterest(25000,9.25,25);
+	b.compoundInterest(35000,3,2,4);
 }
 }
