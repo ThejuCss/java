@@ -4,3 +4,4 @@
 3.Message
 4.SquareArea
 5.SquareOfNumber
+6.StringConcat
