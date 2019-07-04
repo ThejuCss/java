@@ -1,0 +1,12 @@
+import java.util.*;
+public class SquareArea{
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter side of a square");
+        int side=sc.nextInt();
+        int area=side*side;
+        System.out.println("area of square "+area);
+        int perimeter=4*(side);
+        System.out.println("perimeter of square "+perimeter);
+    }
+}
