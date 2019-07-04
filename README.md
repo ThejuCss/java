@@ -6,3 +6,4 @@
 5.SquareOfNumber
 6.StringConcat
 7.EqualityOfNumbers
+8.EqualCondition
