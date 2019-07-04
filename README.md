@@ -3,3 +3,4 @@
 2.RectangleArea
 3.Message
 4.SquareArea
+5.SquareOfNumber
