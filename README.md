@@ -5,3 +5,4 @@
 4.SquareArea
 5.SquareOfNumber
 6.StringConcat
+7.EqualityOfNumbers
