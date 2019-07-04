@@ -1,0 +1,13 @@
+import java.util.*;
+public class RectangleArea{
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter length of rectangle");
+        double l=sc.nextDouble();
+        System.out.println("Enter breadth of rectangle");
+        double b=sc.nextDouble();
+        double a=l*b;
+        int area=(int)a;
+        System.out.println("area of rectangle is: "+area);
+    }  
+}
