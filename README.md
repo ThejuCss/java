@@ -8,3 +8,4 @@
 7.EqualityOfNumbers
 8.EqualCondition
 9.StudMarks.java
+10.Student
