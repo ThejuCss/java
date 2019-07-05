@@ -1,0 +1,15 @@
+public class Student
+{
+    String name="jhon";
+    int roll_num=2;
+    void display(){
+        System.out.println("name is "+name);
+        System.out.println("roll no is "+roll_num);
+    }
+    public static void main (String[] args) {
+        Student s=new Student();
+        s.display();
+        
+       
+    }
+}
